@@ -1,0 +1,170 @@
+:root {
+  --primary-bg-color: #ffffff;
+
+  --main-text-color: #434455;
+
+  --dark-accent: #2e2f42;
+
+  --light-accent: #f4f4fd;
+
+  --accent-color: #4d5ae5;
+
+  --hover-focus-color: #404bbf;
+}
+/* ==========BODY========== */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--main-text-color);
+}
+/* Specification */
+
+.list {
+  list-style-type: none;
+  font-style: normal;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* ----------HEADER---------- */
+
+/*  LOGO  */
+.web-logo {
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.studio-logo {
+  color: var(--dark-accent);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/* NAVIGATION */
+.nav-link {
+  color: var(--dark-accent);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--hover-focus-color);
+}
+/* ADDRESS */
+address {
+  font-style: normal;
+}
+.contact {
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.contact:hover,
+.contact:focus {
+  color: var(--hover-focus-color);
+}
+
+/* ----------MAIN PAGE---------- */
+
+/* SECTION 1 - HERO */
+.hero {
+  background-color: var(--dark-accent);
+}
+.hero-title {
+  color: var(--primary-bg-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+/* BUTTONS */
+.button-hero {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--hover-focus-color);
+  cursor: pointer;
+}
+/* SECTION 2 - FEATURES */
+.title-features {
+  color: var(--dark-accent);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.text {
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* SECTION 3 */
+.title {
+  color: var(--dark-accent);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+/* SECTION 4 */
+
+.cards {
+  background-color: var(--light-accent);
+}
+.card {
+  background-color: var(--primary-bg-color);
+}
+/* ==========FOOTER========== */
+
+.footer-element {
+  background-color: var(--dark-accent);
+  color: var(--light-accent);
+}
+.footer-logo {
+  color: var(--light-accent);
+  text-transform: uppercase;
+}
+
+/* ==========PORTFOLIO========== */
+.button-portfolio {
+  color: var(--accent-color);
+  background-color: var(--light-accent);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--hover-focus-color);
+  cursor: pointer;
+}
