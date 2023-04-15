@@ -21,12 +21,15 @@ body {
   background-color: var(--primary-bg-color);
   color: var(--main-text-color);
 }
-
+/* CONTAINER */
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
+}
+.nav-container {
+  border-bottom: 1px solid var(--button-border);
 }
 /* Specification */
 
@@ -39,6 +42,9 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 ul {
   margin-top: 0;
@@ -51,9 +57,24 @@ ul {
 
 /* ----------HEADER---------- */
 
+.header {
+  border-bottom: 1px solid var(--button-border);
+}
+.header-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /*  LOGO  */
 
 .web-logo {
+  margin-right: 72px;
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -75,16 +96,29 @@ ul {
 /* NAVIGATION */
 
 .nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   color: var(--dark-accent);
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  /* outline: 1px solid orangered; */
 }
 .nav-link:hover,
 .nav-link:focus {
   color: var(--hover-focus-color);
+}
+
+.nav-list {
+  display: flex;
+}
+.nav-list .item + .item {
+  margin-left: 40px;
 }
 
 /* ADDRESS */
@@ -93,6 +127,10 @@ address {
   font-style: normal;
 }
 .contact {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   color: var(--main-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -102,6 +140,13 @@ address {
 .contact:hover,
 .contact:focus {
   color: var(--hover-focus-color);
+}
+
+.contact-list {
+  display: flex;
+}
+.contact-list .item + .item {
+  margin-left: 40px;
 }
 
 /* ----------MAIN PAGE---------- */
