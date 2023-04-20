@@ -83,9 +83,6 @@ img {
 }
 /*  LOGO  */
 
-.nav > .link {
-  margin-right: 72px;
-}
 .web-logo {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
@@ -94,6 +91,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 72px;
 }
 .studio-logo {
   color: var(--dark-accent);
@@ -310,8 +308,14 @@ address {
 
 /* ==========PORTFOLIO========== */
 
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .button-portfolio {
   display: inline-block;
+
   color: var(--accent-color);
   background-color: var(--light-accent);
   font-family: 'Roboto', sans-serif;
@@ -319,15 +323,16 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
   border: 1px solid var(--button-border);
   border-radius: 4px;
   padding: 12px 24px;
+  cursor: pointer;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
   color: var(--primary-bg-color);
   background-color: var(--hover-focus-color);
-  cursor: pointer;
 }
 
 .button-list {
