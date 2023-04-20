@@ -356,8 +356,8 @@ address {
   width: calc((100% - 48px) / 3);
 }
 .portfolio-descruption {
-  border-top: none;
   border: 1px solid var(--button-border);
+  border-top: none;
   padding-top: 32px;
   padding-right: 16px;
   padding-bottom: 32px;
