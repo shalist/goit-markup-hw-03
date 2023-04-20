@@ -333,6 +333,7 @@ address {
 .button-item:focus {
   color: var(--primary-bg-color);
   background-color: var(--hover-focus-color);
+  border: 1px solid transparent;
 }
 
 .button-list {
@@ -351,8 +352,8 @@ address {
   padding-bottom: 120px;
   justify-content: center;
 }
-.portfolio-item {
-  width: calc((100%-48px) / 3);
+.portfolio-item > .link {
+  width: calc((100% - 48px) / 3);
 }
 .portfolio-descruption {
   border-top: none;
