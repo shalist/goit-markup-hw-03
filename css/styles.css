@@ -30,6 +30,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
+  padding: 0 15px;
   /* outline: 1px solid tomato; */
 }
 .nav-container {
@@ -82,8 +83,10 @@ img {
 }
 /*  LOGO  */
 
-.web-logo {
+.nav > .link {
   margin-right: 72px;
+}
+.web-logo {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -126,8 +129,11 @@ img {
 .nav-list {
   display: flex;
 }
-.nav-list .item + .item {
-  margin-left: 40px;
+.nav-list > .item {
+  margin-right: 40px;
+}
+.nav-list > .item:last-child {
+  margin-right: 0;
 }
 
 /* ADDRESS */
@@ -154,8 +160,12 @@ address {
 .contact-list {
   display: flex;
 }
-.contact-list .item + .item {
-  margin-left: 40px;
+.contact-list > .item {
+  margin-right: 40px;
+}
+
+.contact-list > .item:last-child {
+  margin-right: 0;
 }
 
 /* ----------MAIN PAGE---------- */
@@ -164,9 +174,10 @@ address {
 
 .hero {
   background-color: var(--dark-accent);
-  text-align: center;
+  padding: 188px 0;
 }
 .hero-title {
+  max-width: 496px;
   margin-bottom: 48px;
   color: var(--primary-bg-color);
   font-weight: 700;
@@ -178,7 +189,7 @@ address {
 /* BUTTON HERO */
 
 .button-hero {
-  display: inline-block;
+  display: block;
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
   font-family: 'Roboto', sans-serif;
@@ -189,12 +200,12 @@ address {
   border: 0;
   border-radius: 4px;
   padding: 16px 32px;
-  text-align: center;
+  min-width: 169px;
+  cursor: pointer;
 }
 .button-hero:hover,
 .button-hero:focus {
   background-color: var(--hover-focus-color);
-  cursor: pointer;
 }
 
 /* SECTION 2 - FEATURES */
@@ -205,6 +216,9 @@ address {
 .features-list {
   display: flex;
   gap: 24px;
+}
+.features-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 .title-features {
   margin-bottom: 8px;
@@ -230,6 +244,9 @@ address {
 .galery-list {
   display: flex;
   gap: 24px;
+}
+.galery-item {
+  width: calc(100% - 3 * 16px) / 3;
 }
 .title {
   margin-bottom: 72px;
@@ -282,12 +299,13 @@ address {
   color: var(--light-accent);
   text-transform: uppercase;
 }
-.text-footer {
-  margin-top: 16px;
-}
 .footer-block {
   max-width: 264px;
   margin-left: 0;
+}
+.footer-block > .link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 /* ==========PORTFOLIO========== */
@@ -330,7 +348,7 @@ address {
 }
 .portfolio-item {
   border: 1px solid var(--button-border);
-  /* flex-basis: calc((100%-48) / 3); */
+  flex-basis: calc((100%-48) / 3);
 }
 .portfolio-descruption {
   padding-top: 32px;
