@@ -329,8 +329,8 @@ address {
   padding: 12px 24px;
   cursor: pointer;
 }
-.button-item:hover,
-.button-item:focus {
+.button-portfolio:hover,
+.button-portfolio:focus {
   color: var(--primary-bg-color);
   background-color: var(--hover-focus-color);
   border: 1px solid transparent;
@@ -339,7 +339,6 @@ address {
 .button-list {
   display: flex;
   gap: 24px;
-  padding-top: 96px;
   justify-content: center;
   margin-bottom: 72px;
 }
@@ -349,7 +348,6 @@ address {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-  padding-bottom: 120px;
   justify-content: center;
 }
 .portfolio-item > .link {
